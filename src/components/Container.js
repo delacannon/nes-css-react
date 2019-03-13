@@ -6,6 +6,7 @@ import { mapToCssModules, tagPropType } from "../utils/utils";
 const propTypes = {
 	tag: tagPropType,
 	dark: PropTypes.bool,
+	align: PropTypes.string,
 	rounded: PropTypes.bool,
 	className: PropTypes.string,
 	cssModule: PropTypes.object,
@@ -24,6 +25,7 @@ const Container = props => {
 	const {
 		className,
 		cssModule,
+		align,
 		dark,
 		rounded,
 		tag: Tag,
@@ -37,7 +39,7 @@ const Container = props => {
 
 	const alignPosition =
 		hasTitle.length > 0 &&
-		[...hasTitle.map(e => (e.props.align === "" ? `` : e.props.align))][0];
+		[...hasTitle.map(e => (e.props.align === "" ? `` : align))][0];
 
 	const classes = mapToCssModules(
 		classNames(
