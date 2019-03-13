@@ -1,20 +1,20 @@
 {
   "name": "nes-css-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "React components for nes.css",
   "main": "build/index.js",
   "repository": {
     "type": "git",
-    "url": "<git_repo_url>"
+    "url": "https://github.com/delacannon/nes-css-react"
   },
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack"
   },
   "author": {
-    "name": "<your npm name>"
+    "name": "@delacannon <delacannon@gmail.com>"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "webpack": "^4.12.0"
   },
