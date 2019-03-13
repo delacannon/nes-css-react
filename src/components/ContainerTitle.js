@@ -18,10 +18,7 @@ const defaultProps = {
 const ContainerTitle = props => {
 	const { align, className, cssModule, tag: Tag, ...attributes } = props;
 
-	const classes = mapToCssModules(
-		classNames(className, align, "title"),
-		cssModule
-	);
+	const classes = mapToCssModules(classNames(className, "title"), cssModule);
 
 	return <Tag {...attributes} className={classes} align={align} />;
 };
