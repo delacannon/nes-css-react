@@ -6,6 +6,7 @@ import { mapToCssModules, tagPropType } from "../utils/utils";
 const propTypes = {
 	tag: tagPropType,
 	dark: PropTypes.bool,
+	children: PropTypes.node,
 	rounded: PropTypes.bool,
 	className: PropTypes.string,
 	cssModule: PropTypes.object,
@@ -25,13 +26,14 @@ const Container = props => {
 		className,
 		cssModule,
 		dark,
+		children,
 		rounded,
 		tag: Tag,
 		innerRef,
 		...attributes
 	} = props;
 
-	const hasTitle = [...props.children].filter(
+	const hasTitle = [...children].filter(
 		c => c.type.displayName === "ContainerTitle"
 	);
 
@@ -51,7 +53,11 @@ const Container = props => {
 		cssModule
 	);
 
-	return <Tag {...attributes} className={classes} ref={innerRef} />;
+	return (
+		<Tag {...attributes} className={classes} ref={innerRef}>
+			{children}
+		</Tag>
+	);
 };
 
 Container.propTypes = propTypes;
