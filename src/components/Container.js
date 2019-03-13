@@ -46,7 +46,7 @@ const Container = props => {
 			className,
 			"nes-container",
 			dark ? "is-dark" : false,
-			hasTitle.length > 0 ? "with-title" : "",
+			hasTitle ? "with-title" : "",
 			alignPosition ? `is-${alignPosition}` : "",
 			rounded ? "is-rounded" : false
 		),

@@ -1,7 +1,7 @@
 {
   "name": "nes-css-react",
-  "version": "1.1.4",
-  "description": "Nes.css react components",
+  "version": "1.1.5",
+  "description": "React components for NES.css",
   "main": "build/index.js",
   "repository": {
     "type": "git",
