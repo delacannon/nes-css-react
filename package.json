@@ -1,6 +1,6 @@
 {
   "name": "nes-css-react",
-  "version": "1.1.0",
+  "version": "1.1.4",
   "description": "Nes.css react components",
   "main": "build/index.js",
   "repository": {
@@ -17,8 +17,9 @@
   "author": {
     "name": "@delacannon"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.4.0",
     "webpack": "^4.12.0"
   },
