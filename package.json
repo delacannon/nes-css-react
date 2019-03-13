@@ -1,0 +1,30 @@
+{
+  "name": "nes-css-react",
+  "version": "0.0.1",
+  "description": "NES.css react components",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "latest"
+  },
+  "dependencies": {
+    "react": "latest",
+    "webpack": "latest"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "delacannon",
+    "email": "delacannon@gmail.com"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "webpack-cli": "^3.2.3"
+  }
+}
